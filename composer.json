@@ -1,0 +1,32 @@
+{
+    "name": "chey/xyplib",
+    "description": "PHP libraries for the Xymon monitoring system.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chey",
+            "homepage": "https://github.com/chey",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xymon\\": "src"
+        },
+        "files": ["src/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xymon\\Test\\": "tests"
+        },
+        "files": ["src/functions.php"]
+    }
+}
